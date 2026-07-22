@@ -1,4 +1,4 @@
-from pathlib import Path
+from pathlib import Pathgit
 
 from selenium import webdriver
 from selenium.webdriver.common.by import By
@@ -8,6 +8,7 @@ def check_header_name(expected_name: str) -> None:
     html_path = Path(__file__).resolve().parent / "index.html"
 
     driver = webdriver.Chrome()
+    driver.sleep(10000)
     try:
         driver.get(html_path.resolve().as_uri())
         header_text = driver.find_element(By.TAG_NAME, "h1").text

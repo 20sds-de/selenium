@@ -11,7 +11,7 @@ def main():
 
     try:
         driver.get("https://www.fifa.com")
-        wait = WebDriverWait(driver, 15)
+        wait = WebDriverWait(driver, 2)
 
         popup_selectors = [
             (By.CSS_SELECTOR, "button.close"),
