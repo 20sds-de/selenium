@@ -18,9 +18,9 @@ password.send_keys("mypassword")
 login_btn = driver.find_element(By.XPATH, "//button[@id='loginBtn']")
 login_btn.click()
 
-product = driver.find_element(By.XPATH, "//li[@data-id = '103']").text
+product = driver.find_element(By.XPATH, "//li[@data-id = '102']").text
 print("product:", product)
 
-assert "T-Shirt" in product
+assert "Bike Light" in product
 
 driver.quit()
